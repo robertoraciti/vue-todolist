@@ -16,3 +16,16 @@
 .done {
   text-decoration: line-through;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fa-xmark {
+  float: right;
+  line-height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}

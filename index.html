@@ -53,6 +53,7 @@
             <li
               class="list-container"
               :class="(todo.done == true) ? 'done' : ''"
+              @click="done(index)"
               v-for="(todo , index) in todoList"
             >
               {{ todo.text }}

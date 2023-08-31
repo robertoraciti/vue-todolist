@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: bisque;
+  height: 100vh;
+}
+
+.list-container {
+  border: 1px solid black;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 10px;
+  background-color: lavender;
+}
+
+.done {
+  text-decoration: line-through;
+}

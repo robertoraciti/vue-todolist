@@ -30,6 +30,25 @@
         </header>
         <hr />
         <div class="w-75 m-auto">
+          <div class="input-group w-50 m-auto mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Inserisci azione da fare"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              v-model.trim="newTodo"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              id="button-addon2"
+              @click="addTodo()"
+            >
+              Aggiungi
+            </button>
+          </div>
+
           <ul class="clearfix">
             <li
               class="list-container"
@@ -38,6 +57,7 @@
             >
               {{ todo.text }}
               <i @click="deleteTodo(index)" class="fa-solid fa-xmark"></i>
+              <i @click="done(index)" class="fa-solid fa-check"></i>
             </li>
           </ul>
         </div>

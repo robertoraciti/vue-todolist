@@ -22,6 +22,12 @@
   clear: both;
   display: table;
 }
+.fa-check {
+  float: right;
+  line-height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
 .fa-xmark {
   float: right;

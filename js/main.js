@@ -33,12 +33,27 @@ createApp({
           done: false,
         },
       ],
+      newTodo: "",
     };
   },
 
   methods: {
+    done(index) {
+      this.todoList[index].done = true;
+    },
+
     deleteTodo(index) {
       this.todoList.splice(index, 1);
+    },
+
+    addTodo() {
+      console.log(this.newTodo);
+      const newObject = {
+        text: this.newTodo,
+        done: false,
+      };
+      this.todoList.unshift(newObject);
+      this.newTodo = "";
     },
   },
 }).mount("#app");

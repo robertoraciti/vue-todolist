@@ -38,6 +38,7 @@
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
               v-model.trim="newTodo"
+              @keyup.enter="addTodo()"
             />
             <button
               class="btn btn-outline-success"
